@@ -2,7 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const app = express();
 
-var allowlist = ['http://localhost:3333', 'https://plus-one.vercel.app/'];
+var allowlist = ['https://plus-one.vercel.app/'];
 var corsOptionsDelegate = function (req, callback) {
   var corsOptions;
   if (allowlist.indexOf(req.header('Origin')) !== -1) {

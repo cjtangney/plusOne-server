@@ -3,7 +3,7 @@ const cors = require('cors');
 const app = express();
 
 app.use(cors({
-  origin: 'https://plus-one-server.vercel.app',
+  origin: 'https://plus-one.vercel.app',
 }));
 
 const mongo = require('mongodb').MongoClient;
